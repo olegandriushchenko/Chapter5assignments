@@ -1,9 +1,29 @@
-class rocket:
+class Rocket:
     def __init__(self, x, y):
-        self.x = 0
-        self.y = 0
-move_up(1)
-move_right(1)
-mode_down(1)
-move_left(1)
-current_postition()
+        self.x = x
+        self.y = y
+    def move_up(self):
+        print(self.y + 1)
+    def move_right(self):
+        print(self.x + 1)
+    def move_down(self):
+        print(self.y - 1)
+    def move_left(self):
+        print(self.x - 1)
+    def current_position(self):
+        print(self.x + self.y)
+
+move1 = Rocket(0, 0)
+move1.move_up()
+
+move2 = Rocket(0, 0)
+move2.move_right()
+
+move3 = Rocket(0, 0)
+move2.move_down()
+
+move4 = Rocket(0, 0)
+move4.move_left()
+
+currentPosition = Rocket(0, 0)
+currentPosition.current_position()    
